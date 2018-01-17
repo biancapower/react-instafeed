@@ -4,7 +4,7 @@ import Instafeed from 'instafeed.js';
 
 class InstafeedComponent extends Component {
 
-  render() {
+  componentDidMount() {
     const instafeed = new Instafeed({
       target: this.props.target || 'instafeed',
       get: 'user',
@@ -36,10 +36,11 @@ class InstafeedComponent extends Component {
             </a>`
     });
     instafeed.run();
+  }
+  render() {
+    
 
-    return (
-      <div id={instafeed.target} />
-    )
+    return null;
   }
 }
 
