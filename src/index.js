@@ -1,6 +1,5 @@
 import React from 'react'
 import { string } from 'prop-types'
-// import Instafeed from 'instafeed.js'
 import Instafeed from './instafeed'
 
 class InstafeedComponent extends React.Component {
